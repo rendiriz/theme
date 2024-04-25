@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/favicon.svg',
+    icon: SITE.favicon,
   },
   title: `Theme — ${SITE.title}`,
   description: SITE.description,
