@@ -6,6 +6,7 @@ import { Drawer } from 'vaul';
 import { MenuIcon, XIcon } from 'lucide-react';
 
 import type { Theme } from '@/types/theme';
+import { SITE } from '@/config/site';
 import { delay } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Logo } from './logo';
@@ -88,12 +89,12 @@ export function HeaderDrawer({ theme }: Props) {
                 >
                   Features
                 </Link>
-                <Link
-                  href="#hireMe"
-                  onClick={handleScroll}
+                <a
+                  href={SITE.hire}
+                  target="_blank"
                 >
                   Hire Me
-                </Link>
+                </a>
               </nav>
             </div>
           </div>

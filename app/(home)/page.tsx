@@ -1,3 +1,4 @@
+import { SITE } from '@/config/site';
 import { Gutter } from '@/components/gutter';
 import { Search } from '@/components/search';
 
@@ -27,6 +28,23 @@ export default function Home() {
       <h1 className="text-5xl md:text-6xl">THEME</h1>
 
       <Search />
+
+      <div className="flex gap-6">
+        <a
+          href={`mailto:${SITE.mail}`}
+          className="text-sm underline"
+          target="_blank"
+        >
+          Support
+        </a>
+        <a
+          href={SITE.hire}
+          className="text-sm underline"
+          target="_blank"
+        >
+          Hire Me
+        </a>
+      </div>
     </Gutter>
   );
 }
