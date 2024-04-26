@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 import type { Theme } from '@/types/theme';
+import { SITE } from '@/config/site';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Gutter } from '@/components/gutter';
@@ -26,10 +27,6 @@ const NAVIGATION = [
   {
     href: '#features',
     label: 'Features',
-  },
-  {
-    href: '#hireMe',
-    label: 'Hire Me',
   },
 ];
 
@@ -83,6 +80,16 @@ export function Header({ theme }: Props) {
               )}
             />
           ))}
+          <a
+            href={SITE.hire}
+            target="_blank"
+            className={cn(
+              isTop ? 'text-white' : 'text-body',
+              'hidden font-medium md:block',
+            )}
+          >
+            Hire Me
+          </a>
           <Button asChild>
             <a
               href={theme.buy}

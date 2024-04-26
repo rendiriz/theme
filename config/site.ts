@@ -7,4 +7,5 @@ export const SITE = {
   image: 'https://placehold.co/1820x904',
   linkedin: 'rendiriz',
   mail: 'rendirizkir@gmail.com',
+  hire: 'https://forms.gle/sskPs1PBMb56fxEG9',
 };
